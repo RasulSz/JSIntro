@@ -88,8 +88,10 @@ input:checked + .slider:before {
 
 #answer {
   font-size: 48px;
-  background-color: #ccc;
+  background-color: transparent;
   margin-top: 200px;
+  text-align: right;
+  border: 0;
   
 }
 
