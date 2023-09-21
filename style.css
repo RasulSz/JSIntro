@@ -1,0 +1,199 @@
+body {
+  background-color: gray;
+}
+.fullbody {
+  margin: auto;
+  width: 390px;
+  height: 800px;
+  border-radius: 39px;
+  background: linear-gradient(
+    167deg,
+    #f7f8fb -5.94%,
+    rgba(247, 248, 251, 0.19) 103.62%
+  );
+  backdrop-filter: blur(51px);
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.tbuton {
+  margin-left: 75%;
+  padding: 17px;
+}
+
+.digits {
+  margin-top: 118px;
+}
+
+.numbers {
+  font-size: 30px;
+}
+
+#answer {
+  font-size: 48px;
+  background-color: #ccc;
+  margin-top: 200px;
+  
+}
+
+.buttons {
+  margin-top: 240px;
+ 
+}
+
+.buttoninfo {
+  display: flex;
+  width: 62px;
+  height: 62px;
+  padding: 6px 4px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: linear-gradient(
+    130deg,
+    rgba(255, 255, 255, 0.6) -9.69%,
+    rgba(255, 255, 255, 0.4) 114.23%
+  );
+  backdrop-filter: blur(6px);
+}
+
+.buttonsplacement{
+    display: flex;
+    flex-direction:row ;
+}
+
+
+button{
+    font-size: 20px;
+}
+
+.b-1{
+    padding-left: 34px;
+}
+
+.b-2{
+    padding-left: 20px;
+}
+
+.buttonsplacement-2{
+    padding-top: 22px;
+    display: flex;
+    flex-direction:row ;
+}
+
+.buttonsplacement-double{
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonsplacement-3{
+    display: flex;
+    flex-direction:row;
+}
+
+.buttonsplacement-4{
+    display: flex;
+    flex-direction:row ;
+    padding-top: 22px;
+}
+
+.bi-1{
+    padding-left: 34px;
+}
+
+.bi-2{
+    padding-left: 22px;
+}
+
+.btnalone{
+    padding-left: 280px;
+    margin-top: -134px;
+}
+
+.buttonplacelast{
+    display: flex;
+    flex-direction: row;
+    padding-top: 60px;
+}
+
+.pl{
+    padding-left: 34px;
+}
+
+.but-1{
+    padding-left: 22px;
+}
+
+.special{
+    margin-top: -35px;
+}
+
+.accept{
+    position: absolute;
+    margin-top: -97px;
+    position: absolute;
+    
+}

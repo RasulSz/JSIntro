@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="fullbody">
+        <section class="tbuton">
+            <label class="switch">
+                <input style="width: 375px;" type="checkbox">
+                <span class="slider round"></span>
+              </label>
+        </section>
+            <!-- LABEL -->
+            <section class="part-1">
+                <section class="accept">
+                    <input style="width: 375px;" type="text" class="" id="answer" for="button"></input>
+                </section>
+            </section>
+
+
+            <section class="part2">
+                <section class="buttons">
+                    <section class="buttonsplacement">
+                        <section class="b-1">
+                            <button  class="buttoninfo btn-clear">Ac</button>
+                        </section>
+                        <section class="b-2">
+                            <button id="clear" class="buttoninfo">C</button>
+    
+                        </section>
+                        <section class="b-2">
+                            <button onclick="CallDiv()" id="div" class="buttoninfo">/</button>
+                        </section>
+                        <section class="b-2">
+                            <button onclick="CallMult()" id="mult" class="buttoninfo">*</button>
+                            
+                        </section>
+                    </section>
+                    <section class="buttonsplacement-2">
+                        <section class="b-1">
+                            <button onclick="Call7()" id="elemSeven" class="buttoninfo">7</button>
+                        </section>
+                        <section class="b-2">
+                            <button onclick="Call8()" id="elemEight" class="buttoninfo">8</button>
+    
+                        </section>
+                        <section class="b-2">
+                            <button onclick="Call9()" id="elemNine" class="buttoninfo">9</button>
+                            
+                        </section>
+                        <section class="b-2">
+                            <button onclick="CallSub()" id="sub" class="buttoninfo">-</button>
+                        </section>
+                    </section>
+    
+                    <section class="buttonsplacement-double">
+                        <section class="buttonsplacement-3">
+                            <section class="bi-1">
+                                <button onclick="Call4()" id="elemFour" class="buttoninfo">4</button>
+                            </section>
+                            <section class="bi-2">
+                                <button onclick="Call5()" id="elemFive" class="buttoninfo">5</button>
+                            </section>
+                            <section class="bi-2">
+                                <button onclick="Call6()" id="elemSix" class="buttoninfo">6</button>
+                            </section>
+                        </section>
+                        <section class="buttonsplacement-4">
+                            <section class="bi-1">
+                                <button onclick="Call1()" id="elemOne" class="buttoninfo">1</button>
+                            </section>
+                            <section class="bi-2">
+                                <button onclick="Call2()" id="elemTwo" class="buttoninfo">2</button>
+                            </section>
+                            <section class="bi-2">
+                                <button onclick="Call3()" id="elemThree" class="buttoninfo">3</button>
+                            </section>
+                        </section>
+                        <section class="btnalone">
+                            <button onclick="CallAdd()" id="add" style="height: 96px;" class="buttoninfo">+</button>
+                        </section>
+                    </section>
+                    <section class="buttonplacelast">
+                        <section class="pl">
+                            <button onclick="Call0()" id="elemZero" style="width: 144px;" class="buttoninfo">0</button>
+                        </section>
+                        <section class="but-1">
+                            <button onclick="CallDot()" id="dot" class="buttoninfo">.</button>
+                        </section>
+                        <section class="but-1 special">
+                            <button onclick="CallEqual()" id="equal" style="height: 96px;" class="buttoninfo">=</button>
+                        </section>
+                    </section>
+                </section>
+            </section>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
