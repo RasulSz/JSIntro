@@ -19,7 +19,7 @@ function buttonClick(value) {
 }
 
 function handleSymbol(symbol) {
-  if (symbol == "C") {
+  if (symbol == "AC") {
     buffer = "0";
     runningTotal = 0;
   } else if (symbol === "=") {
@@ -30,7 +30,7 @@ function handleSymbol(symbol) {
     previousOperator = null;
     buffer = runningTotal;
     runningTotal = 0;
-  } else if (symbol === "←") {
+  } else if (symbol === "C") {
     if (buffer.length === 1) {
       buffer = "0";
     } else {
@@ -38,9 +38,9 @@ function handleSymbol(symbol) {
     }
   } else if (
     symbol === "+" ||
-    symbol === "−" ||
-    symbol === "×" ||
-    symbol === "÷"
+    symbol === "-" ||
+    symbol === "*" ||
+    symbol === "/"
   ) {
     handleMath(symbol);
   }
@@ -65,11 +65,11 @@ function handleMath(symbol) {
 function flushOperation(intBuffer) {
   if (previousOperator === "+") {
     runningTotal += intBuffer;
-  } else if (previousOperator === "−") {
+  } else if (previousOperator === "-") {
     runningTotal -= intBuffer;
-  } else if (previousOperator === "×") {
+  } else if (previousOperator === "*") {
     runningTotal *= intBuffer;
-  } else if (previousOperator === "÷") {
+  } else if (previousOperator === "/") {
     runningTotal /= intBuffer;
   }
 }

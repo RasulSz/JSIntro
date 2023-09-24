@@ -9,7 +9,7 @@
   --primary-color: white;
   --second-color: gray;
   --button-color: gray;
-  --buttontext-color:black;
+  --buttontext-color:white;
   --backcolor-color:gray;
 }
 
@@ -26,18 +26,18 @@ html {
 
 body {
   align-items: center;
-  background: lightseagreen;
+  background: gray;
   display: flex;
-  font-family: "Dosis", sans-serif;
-  font-display: swap;
-  height: inherit;
+  padding-top: 50px;
   justify-content: center;
 }
 
 .toggleBtn {
   position: absolute;
   margin-left: 60%;
-  margin-top: -30%;
+  margin-top: -28%;
+  width: 20px;
+  height: 30px;
 }
 
 label {
@@ -47,10 +47,8 @@ label {
   display: block;
   background: #ebebeb;
   border-radius: 200px;
-  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
-  transition: 0.3s;
+  
 }
 label:after {
   content: "";
@@ -81,43 +79,19 @@ label:active:after {
   width: 50px;
 }
 .background {
-  width: 100vw;
-  height: 100vh;
   background: #fff;
   z-index: -1;
   position: absolute;
-  transition: 0.3s;
+
 }
 input:checked + label + .background {
   background: #242424;
-}
-label svg {
-  position: absolute;
-  width: 25px;
-  top: 11px;
-  z-index: 100;
-}
-label svg.sun {
-  left: 10px;
-  fill: #fff;
-  transition: 0.3s;
-}
-label svg.moon {
-  left: 68px;
-  fill: #7e7e7e;
-  transition: 0.3s;
-}
-input:checked + label svg.sun {
-  fill: #7e7e7e;
-}
-input:checked + label svg.moon {
-  fill: #fff;
 }
 
 .wrapper {
   backdrop-filter: blur(5.5px);
   -webkit-backdrop-filter: blur(5.5px);
-  border-radius: 44px;
+  border-radius: 60px;
   color: #232323;
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -128,19 +102,17 @@ input:checked + label svg.moon {
 }
 
 .screen {
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
-  background: rgba(255, 255, 255, 0.75);
-  border: 1px solid rgba(255, 255, 255, 0.01);
+  background: transparent;
+  border: 1px transparent;
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
-  color: #232323;
+  box-shadow: 0 4px 30px transparent;
+  color: black;
   font-size: 35px;
   overflow: auto;
   padding: 20px;
   text-align: right;
-  width: 326px;
-  margin-bottom: 30%;
+  width: 340px;
+  margin-bottom: 40%;
 }
 
 .calc-button-row {
@@ -150,12 +122,9 @@ input:checked + label svg.moon {
 }
 
 .calc-button {
-  backdrop-filter: blur(5.5px);
-  -webkit-backdrop-filter: blur(5.5px);
   background: var(--button-color);
   border: 1px solid rgba(255, 255, 255, 0.01);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  border-radius: 24px;
   color: var(--buttontext-color);
   flex-basis: 20%;
   font-family: inherit;
@@ -164,31 +133,25 @@ input:checked + label svg.moon {
 }
 
 .calc-button:last-child {
-  backdrop-filter: blur(5.5px);
-  border-radius: 16px;
+  border-radius: 24px;
   color: #fff;
-  background: var(--second-color);
+  background: black;
 }
 
-.calc-button:last-child:hover {
-  background-color: lightblue;
-  color: inherit;
-}
 
-.calc-button:hover {
-  background-color: lightblue;
-}
 
 .calc-button:active {
   background-color: white;
 }
 
+
 .double {
-  flex-basis: 47%;
+  width: 50px;
 }
 
 .triple {
   flex-basis: 73%;
+  margin-top: -80px;
 }
 
 .back {
@@ -199,4 +162,8 @@ input:checked + label svg.moon {
   flex-shrink: 0;
   border-radius: 100px;
   background: var(--button-color);
+}
+
+.different{
+  height: 160px;
 }
